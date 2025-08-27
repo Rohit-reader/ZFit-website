@@ -160,8 +160,11 @@ const Contact = () => {
                   <FaMapMarkerAlt />
                 </div>
                 <div className="content">
-                  <h4>Our Location</h4>
-                  <p>123 Fitness Street<br />New York, NY 10001</p>
+                  <h4>Our Locations</h4>
+                  <h2>Perundurai Branch</h2>
+                  <p>2nd Floor, Upstairs of Trends Clothing Store<br />Kunnathur – Perundurai Road, Near Poorvika Mobiles<br/>Perundurai, Tamil Nadu – 638052</p>
+                  <h2>Karur Branch</h2>
+                  <p>P Square<br/>G.R Nagar, North Gandhi Gramam<br/>Gandhigramam, Karur<br/>Tamil Nadu – 639004</p>
                 </div>
               </div>
               
@@ -171,7 +174,8 @@ const Contact = () => {
                 </div>
                 <div className="content">
                   <h4>Phone</h4>
-                  <a href="tel:+1234567890">(123) 456-7890</a>
+                  <h2>Perundurai Branch</h2>
+                  <a href="tel:+90953 53595">90953 53595</a>
                 </div>
               </div>
               
@@ -191,8 +195,7 @@ const Contact = () => {
                 </div>
                 <div className="content">
                   <h4>Working Hours</h4>
-                  <p>Monday - Friday: 6:00 AM - 10:00 PM<br />
-                  Saturday - Sunday: 7:00 AM - 8:00 PM</p>
+                  <p>Perundurai Branch - Everyday : 5AM - 10PM <br/> Karur Branch - Everyday: 5AM - 9.30PM</p>
                 </div>
               </div>
             </div>
