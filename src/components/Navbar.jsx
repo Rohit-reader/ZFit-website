@@ -40,10 +40,10 @@ const NavLink = styled.li`
     font-weight: 500;
     padding: ${(props) => props.theme.spacing(1)} 0;
     position: relative;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     
     &:hover {
-      color: ${(props) => props.theme.colors.accent};
+      color: white; /* Keep text white on hover */
     }
     
     &::after {
@@ -53,7 +53,7 @@ const NavLink = styled.li`
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: ${(props) => props.theme.colors.accent};
+      background-color: white; /* White underline */
       transition: width 0.3s ease;
     }
     
