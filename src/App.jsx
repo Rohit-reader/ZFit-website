@@ -26,6 +26,10 @@ const globalStyles = theme => css`
     background-color: ${theme.colors.background};
   }
   
+  main {
+    /* Removed margin-top since we're handling it with the navbar's fixed position */
+  }
+  
   h1, h2, h3, h4, h5, h6 {
     font-family: ${theme.fonts.secondary};
     line-height: 1.2;
@@ -84,10 +88,18 @@ function App() {
       <Global styles={globalStyles} />
       <Navbar />
       <main>
-        <Hero />
-        <Programs />
-        <About />
-        <Contact />
+        <section id="home" style={{ padding: '0', margin: '0' }}>
+          <Hero />
+        </section>
+        <section id="programs" style={{ padding: '4rem 0' }}>
+          <Programs />
+        </section>
+        <section id="about" style={{ padding: '4rem 0' }}>
+          <About />
+        </section>
+        <section id="contact" style={{ padding: '4rem 0' }}>
+          <Contact />
+        </section>
       </main>
       <Footer />
     </ThemeProvider>

@@ -17,7 +17,7 @@ const containerStyles = theme => css`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: ${theme.spacing(6)};
-  margin-bottom: ${theme.spacing(6)};
+  /* removed margin-bottom to avoid extra blank space */
 `;
 
 const footerSection = theme => css`
@@ -117,26 +117,8 @@ const quickLinks = theme => css`
   }
 `;
 
-const copyright = theme => css`
-  text-align: center;
-  padding-top: ${theme.spacing(4)};
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: #aaa;
-  font-size: 0.85rem;
-
-  a {
-    color: ${theme.colors.primary};
-    font-weight: 500;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-`;
-
 const Footer = () => {
   const theme = useTheme();
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer css={footerStyles(theme)}>
@@ -158,8 +140,6 @@ const Footer = () => {
             <li><a href="#home">Home</a></li>
             <li><a href="#programs">Programs</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#trainers">Trainers</a></li>
-            <li><a href="#pricing">Pricing</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -169,17 +149,17 @@ const Footer = () => {
           <div css={contactItem(theme)}>
             <div className="icon"><FaMapMarkerAlt /></div>
             <div className="content">
-            <h2>Perundurai Branch</h2>
-                <p>2nd Floor, Upstairs of Trends Clothing Store<br />Kunnathur – Perundurai Road, Near Poorvika Mobiles<br/>Perundurai, Tamil Nadu – 638052</p><br/>
-                <h2>Karur Branch</h2>
-                <p>P Square<br/>G.R Nagar, North Gandhi Gramam<br/>Gandhigramam, Karur<br/>Tamil Nadu – 639004</p>
+              <h2>Perundurai Branch</h2>
+              <p>2nd Floor, Upstairs of Trends Clothing Store<br />Kunnathur – Perundurai Road, Near Poorvika Mobiles<br/>Perundurai, Tamil Nadu – 638052</p><br/>
+              <h2>Karur Branch</h2>
+              <p>P Square<br/>G.R Nagar, North Gandhi Gramam<br/>Gandhigramam, Karur<br/>Tamil Nadu – 639004</p>
             </div>
           </div>
           <div css={contactItem(theme)}>
             <div className="icon"><FaPhoneAlt /></div>
             <div className="content">
-            <h2>Perundurai Branch</h2>
-            <a href="tel:+90953 53595">90953 53595</a>
+              <h2>Perundurai Branch</h2>
+              <a href="tel:+90953 53595">90953 53595</a>
             </div>
           </div>
           <div css={contactItem(theme)}>
@@ -192,8 +172,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      
     </footer>
   );
 };
