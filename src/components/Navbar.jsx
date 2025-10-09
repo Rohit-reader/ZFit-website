@@ -109,6 +109,7 @@ export default function Navbar() {
         <NavLink><a href="#programs" onClick={(e) => scrollToSection(e, 'programs')}>Programs</a></NavLink>
         <NavLink><a href="#about" onClick={(e) => scrollToSection(e, 'about')}>About</a></NavLink>
         <NavLink><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a></NavLink>
+        <NavLink><a href="#plans" onClick={(e) => scrollToSection(e, 'plans')}>Plans</a></NavLink>
       </Links>
     </Nav>
   );

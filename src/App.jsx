@@ -100,6 +100,7 @@ function App() {
         <section id="contact" style={{ padding: '4rem 0' }}>
           <Contact />
         </section>
+        
       </main>
       <Footer />
     </ThemeProvider>
